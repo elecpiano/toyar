@@ -20,10 +20,12 @@ public class RootControl : MonoBehaviour
 
     void Update()
     {
-        if (anchor != null)
+        if (anchor != null || Input.touchCount == 0)
         {
             return;
         }
+
+
 
         var touch = Input.GetTouch(0);
         if (touch.phase != TouchPhase.Ended)
