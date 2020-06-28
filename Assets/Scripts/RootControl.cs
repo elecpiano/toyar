@@ -25,8 +25,6 @@ public class RootControl : MonoBehaviour
             return;
         }
 
-
-
         var touch = Input.GetTouch(0);
         if (touch.phase != TouchPhase.Ended)
         {
